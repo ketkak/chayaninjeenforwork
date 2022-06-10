@@ -1,5 +1,11 @@
+/*responsive ตัวอักษร*/
+html{
+    font-size: calc(60% + 0.8vmin);
+}
+
 #icon{
     float: left;
+    padding-left: 1rem;
 }
 
 #icon:hover{
@@ -12,7 +18,7 @@
     background-color: #333;
     color: white;
     padding: 16px;
-    width: 722px;
+    width: 100%;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -27,7 +33,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 722px;
+    min-width: 15rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -50,20 +56,22 @@
 }
 /* ระบะเว้นด้านในของ head */
 .card{
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    
 }
 .allblack{
-    padding: 10px;
+    height: auto;
+    width: 100%;
     background: #333;
 }
 /* สีของ head */
 #header{
     background: #333;
     color: #fff;
-    padding: 10px;
+    height: 60px;
+    width: 100%;
+    
 }
 .cardmain{
     padding-top: 50px;
@@ -78,7 +86,7 @@
 #main{
     /* margin top คือระยะห่างจากด้านบน */
     float: left;
-    width: 900px;
+    width: 60%;
     height: fit-content;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -89,11 +97,11 @@
 
 #asideright{
     float: left;
+    top: -18rem;
+    margin-left: 1rem;
     width: 30%;
-    margin-top: 10px;
-    margin-bottom: 15px;
     color: rgb(0, 0, 0);
-    padding: 10px;
+    position: relative;
 }
 
 /* text ของ main */
@@ -109,7 +117,8 @@ clear: both;
 }
 /*แถบส้มตบแต่ง*/
 .org{
-    padding: 5px;
+    height: 9px;
+    width: 100%;
     background: rgba(251, 142, 18, 0.966);
 }
 /*เป็นกล่องเก็บข้อมูลโปรเจค*/
@@ -134,10 +143,10 @@ clear: both;
 }
 /*กำหนดขนาดรุปของ card*/
 .cardinv img{
-    width: 200px;
-    height: 250px;
+    width: 12.5rem;
+    height: 15.625rem;
     display: block;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     margin-left: auto;
     margin-right: auto;
     
@@ -147,7 +156,7 @@ h1 {
     margin-top: 0px;
     text-align: center;
     background: #333;
-    padding: 5px;
+    padding: 0.313rem;
     color: #fff;
 }
 
@@ -155,7 +164,7 @@ h1 {
     margin-top: 0px;
     text-align: center;
     background: #333;
-    padding: 13px;
+    padding: 0.813rem;
     
 }
 
@@ -169,7 +178,7 @@ h1 {
 }
 
 .cardinv:hover{
-    transform:translatey(-15px)
+    transform:translatey(-0.938rem)
 }
 
 /*ตัว card อยู่ข้างกัน*/
@@ -193,10 +202,9 @@ h1 {
 /**footer*/
 #footer{
     background: #333;
-    width: 98.7%;
+    width: 100%;
     height: 190px;
     color: #fff;
-    padding: 10px;
     margin-top: 25px;
 }
 
@@ -283,20 +291,14 @@ h1 {
     }*/
 
     /*รูปด้านข้างหน้าหลัก*/
-    #asideright img{
-        border-radius: 10%;
-        width:  40%;
-        height: 50%;
-    }
-
     .fleft{
         position: absolute;
-        top: 45rem;
+        top: -30rem;
         left: 40rem;
     }
     .fright{
         position: absolute;
-        top: 63rem;
+        top: -5rem;
         left: 48rem;
     }
 
@@ -309,15 +311,21 @@ h1 {
     /*ใน main ของกล่องดำ*/
     .boxblack{
         margin-top: 1%;
-        width: 94rem;
-        height: 55rem;
+        width: 100%;
+        height: auto;
         background: rgba(68, 52, 35, 0.966);
+    }
+
+    .boxblack img{
+        width: 40rem;
+        height: 80%;
     }
     article{
         padding-top: 16rem;
         margin-left: 8rem;
         height: 20rem;
         width: 18rem;
+        position: relative;
     }
     /*ตัวอักษร*/
     article strong{
@@ -335,6 +343,11 @@ h1 {
         word-break: normal;
     }
 
+    article img{
+        border-radius: 10%;
+        width:  40rem;
+        height: 30rem;
+    }
     .fontwhite{
         color: #fff;
     }
@@ -349,16 +362,15 @@ h1 {
 
     /*ด้านข้างหน้าหลัก*/
     .anicir{
-        margin-top: 1%;
-        width: 200px;
-        height: 200px;
+        margin-top: 2.5%;
+        width: 12.5rem;
+        height: 12.5rem;
         background: rgba(251, 142, 18, 0.966);
         border-radius: 50%;
         transition: .4s;
         margin-right: auto;
         position: absolute;
-        top: 20rem;
-        left: 60rem;
+        top: 0rem;
         
     }
 
@@ -367,18 +379,15 @@ h1 {
         height: 300px;
         position: absolute;
         top: -6rem;
-        right: -15rem;
+        right: -16rem;
     }
 
     .anicir:hover{
         background: #333;
   	    border-radius: 5%;
-        width: 550px;
-        height: 352.5px;
+        width: 120%;
+        padding-bottom: 20%;
         box-shadow: 10px 10px lightblue;
-        position: absolute;
-        top: 14.3rem;
-        left: 58.5rem;
     }
 
     .anicir:hover img{
@@ -386,27 +395,29 @@ h1 {
         height: 300px;
         padding-top: 10%;
         position: absolute;
-        top:-0.1rem;
-        left: -13rem;
+        top:-8rem;
+        left: -14rem;
     }
     /*text ล้องหน*/
     .anicir span{
         opacity: 0;
+        padding: 1%;
     }
 
     .anicir:hover span{
         opacity: 1;
         color: #f1f1f1;
+        position: absolute;
         margin-left: 10rem;
         margin-right: 2rem;
-        bottom: 8rem;
         text-align: right;
-        position: absolute;
+        
     }
 
     .anicir h2{
         text-align: center;
         padding: 10px;
         background: rgba(251, 142, 18, 0.966);
+
     }
 
