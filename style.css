@@ -1,6 +1,6 @@
 /*responsive ตัวอักษร*/
 html{
-    font-size: calc(60% + 0.8vmin);
+    font-size: calc(50% + 0.8vmin);
 }
 
 #icon{
@@ -86,7 +86,7 @@ html{
 #main{
     /* margin top คือระยะห่างจากด้านบน */
     float: left;
-    width: 60%;
+    width: 50%;
     height: fit-content;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -97,11 +97,10 @@ html{
 
 #asideright{
     float: left;
-    top: -18rem;
     margin-left: 1rem;
-    width: 30%;
+    width: 40%;
     color: rgb(0, 0, 0);
-    position: relative;
+    height: auto;
 }
 
 /* text ของ main */
@@ -205,7 +204,6 @@ h1 {
     width: 100%;
     height: 190px;
     color: #fff;
-    margin-top: 25px;
 }
 
 .fbox3 img{
@@ -292,12 +290,9 @@ h1 {
 
     /*รูปด้านข้างหน้าหลัก*/
     .fleft{
-        position: absolute;
-        top: -30rem;
-        left: 40rem;
+        margin-left: auto;
     }
     .fright{
-        position: absolute;
         top: -5rem;
         left: 48rem;
     }
@@ -312,8 +307,12 @@ h1 {
     .boxblack{
         margin-top: 1%;
         width: 100%;
-        height: auto;
+        height: 100%;
         background: rgba(68, 52, 35, 0.966);
+    }
+
+    .absolute{
+        position: absolute;
     }
 
     .boxblack img{
@@ -362,15 +361,15 @@ h1 {
 
     /*ด้านข้างหน้าหลัก*/
     .anicir{
-        margin-top: 2.5%;
+        margin-top: 0;
         width: 12.5rem;
         height: 12.5rem;
         background: rgba(251, 142, 18, 0.966);
         border-radius: 50%;
         transition: .4s;
         margin-right: auto;
+        top: 18rem;
         position: absolute;
-        top: 0rem;
         
     }
 
@@ -379,13 +378,14 @@ h1 {
         height: 300px;
         position: absolute;
         top: -6rem;
-        right: -16rem;
+        right: -18rem;
     }
 
     .anicir:hover{
         background: #333;
   	    border-radius: 5%;
-        width: 120%;
+        width: 30%;
+        height: fit-content;
         padding-bottom: 20%;
         box-shadow: 10px 10px lightblue;
     }
@@ -396,7 +396,7 @@ h1 {
         padding-top: 10%;
         position: absolute;
         top:-8rem;
-        left: -14rem;
+        left: -16rem;
     }
     /*text ล้องหน*/
     .anicir span{
@@ -408,7 +408,7 @@ h1 {
         opacity: 1;
         color: #f1f1f1;
         position: absolute;
-        margin-left: 10rem;
+        margin-left: 12rem;
         margin-right: 2rem;
         text-align: right;
         
@@ -420,4 +420,44 @@ h1 {
         background: rgba(251, 142, 18, 0.966);
 
     }
+
+    .boxrightblack{
+        float: left;
+        width: 50%;
+        height: 50rem;
+        background: rgba(68, 52, 35, 0.966);
+        position: relative;
+    }
+
+    .boxrightblack strong{
+        font-size: 27px;
+        color:rgba(251, 142, 18, 0.966);
+        padding-left: 20px;
+        font-weight: 700;
+        word-break: normal;
+    }
+
+    .boxrightblack h2{
+        margin-top: 15rem;
+        font-size: 27px;
+        padding-left: 8rem;
+        color:#f1f1f1;
+        font-weight: 700;
+        word-break: normal;
+    }
+
+    .boxrightblack p{
+        padding-left: 8rem;
+    }
+
+    .boxrightblack img{
+        border-radius: 10%;
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        max-width: 30rem;
+        min-width: 5rem;
+    }
+
+    
 
