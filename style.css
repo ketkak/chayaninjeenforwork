@@ -96,12 +96,127 @@ html{
 }
 
 #asideright{
+    margin-top: 1rem;
     float: left;
     margin-left: 1rem;
-    width: 40%;
+    width: 35%;
     color: rgb(0, 0, 0);
-    height: auto;
+    height: 35rem;
+    padding: 10px;
+    position: relative;
+    
 }
+
+.ball span{
+    opacity: 0;
+    text-align: right;
+    margin-right: 1rem;
+    left: 1rem;
+    top: 16rem;
+    color: white;
+    position: absolute;
+}
+.ball img{
+    width: 35rem;
+    height: 20rem;
+    position: relative;
+    right: 10rem;
+    bottom: 5rem;
+}
+.ball{
+    background: rgba(251, 142, 18, 0.966);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+}
+
+.ball:hover{
+    background: #333;
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: .4s;
+}
+
+.ball:hover span{
+    opacity: 1;
+}
+
+.ball h2{
+        text-align: center;
+        padding: 10px;
+        background: rgba(251, 142, 18, 0.966);
+}
+
+.ball:hover img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*ด้านข้างหน้าหลัก*/
+    /*
+    .anicir{
+        margin-top: 0;
+        width: 12.5rem;
+        height: 12.5rem;
+        background: rgba(251, 142, 18, 0.966);
+        border-radius: 50%;
+        transition: .4s;
+        margin-right: auto;
+        top: 18rem;
+        position: absolute;
+        
+    }
+
+    .anicir img{
+        width: 650px;
+        height: 300px;
+        position: absolute;
+        top: -6rem;
+        right: -18rem;
+    }
+
+    .anicir:hover{
+        background: #333;
+  	    border-radius: 5%;
+        width: 30%;
+        height: fit-content;
+        padding-bottom: 20%;
+        box-shadow: 10px 10px lightblue;
+    }
+
+    .anicir:hover img{
+        width: 650px;
+        height: 300px;
+        padding-top: 10%;
+        position: absolute;
+        top:-8rem;
+        left: -16rem;
+    }
+    /*text ล้องหน*/
+    /*
+    .anicir span{
+        opacity: 0;
+        padding: 1%;
+    }
+
+    .anicir:hover span{
+        opacity: 1;
+        color: #f1f1f1;
+        position: absolute;
+        margin-left: 12rem;
+        margin-right: 2rem;
+        text-align: right;
+        
+    }
+
+    .anicir h2{
+        text-align: center;
+        padding: 10px;
+        background: rgba(251, 142, 18, 0.966);
+
+    } */
 
 /* text ของ main */
 .textM{
@@ -359,68 +474,6 @@ h1 {
         color: black;
     }
 
-    /*ด้านข้างหน้าหลัก*/
-    .anicir{
-        margin-top: 0;
-        width: 12.5rem;
-        height: 12.5rem;
-        background: rgba(251, 142, 18, 0.966);
-        border-radius: 50%;
-        transition: .4s;
-        margin-right: auto;
-        top: 18rem;
-        position: absolute;
-        
-    }
-
-    .anicir img{
-        width: 650px;
-        height: 300px;
-        position: absolute;
-        top: -6rem;
-        right: -18rem;
-    }
-
-    .anicir:hover{
-        background: #333;
-  	    border-radius: 5%;
-        width: 30%;
-        height: fit-content;
-        padding-bottom: 20%;
-        box-shadow: 10px 10px lightblue;
-    }
-
-    .anicir:hover img{
-        width: 650px;
-        height: 300px;
-        padding-top: 10%;
-        position: absolute;
-        top:-8rem;
-        left: -16rem;
-    }
-    /*text ล้องหน*/
-    .anicir span{
-        opacity: 0;
-        padding: 1%;
-    }
-
-    .anicir:hover span{
-        opacity: 1;
-        color: #f1f1f1;
-        position: absolute;
-        margin-left: 12rem;
-        margin-right: 2rem;
-        text-align: right;
-        
-    }
-
-    .anicir h2{
-        text-align: center;
-        padding: 10px;
-        background: rgba(251, 142, 18, 0.966);
-
-    }
-
     .boxrightblack{
         float: left;
         width: 50%;
@@ -448,6 +501,7 @@ h1 {
 
     .boxrightblack p{
         padding-left: 8rem;
+        margin-bottom: 2rem;
     }
 
     .boxrightblack img{
