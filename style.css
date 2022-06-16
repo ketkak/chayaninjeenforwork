@@ -96,10 +96,10 @@ html{
 }
 
 #asideright{
-    margin-top: 1rem;
+    margin-top: 0rem;
     float: left;
-    margin-left: 1rem;
-    width: 35%;
+    margin-left: 0.1rem;
+    width: 45%;
     color: rgb(0, 0, 0);
     height: 35rem;
     padding: 10px;
@@ -121,7 +121,7 @@ html{
     height: 20rem;
     position: relative;
     right: 10rem;
-    bottom: 5rem;
+    bottom: 6rem;
 }
 .ball{
     background: rgba(251, 142, 18, 0.966);
@@ -150,9 +150,7 @@ html{
 }
 
 .ball:hover img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   float: left;
 }
 /*ด้านข้างหน้าหลัก*/
     /*
@@ -491,7 +489,7 @@ h1 {
     }
 
     .boxrightblack h2{
-        margin-top: 15rem;
+        margin-top: 30%;
         font-size: 27px;
         padding-left: 8rem;
         color:#f1f1f1;
